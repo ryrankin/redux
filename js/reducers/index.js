@@ -2,7 +2,7 @@ import * as actions from '../actions/index';
 
 const initialRepositoryState = [];
 
-export const repositoryReducer = (state=initialRepositoryState, action)
+export const repositoryReducer = (state=initialRepositoryState, action) => {
 	if (action.type === actions.ADD_REPOSITORY){
 		return [...state, {
 			name: action.repository,
@@ -26,3 +26,4 @@ export const repositoryReducer = (state=initialRepositoryState, action)
 	}
 
 	return state;
+}
