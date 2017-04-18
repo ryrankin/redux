@@ -1,3 +1,5 @@
+import 'isomorphic-fetch';
+
 export const ADD_REPOSITORY = 'ADD_REPOSITORY';
 export const addRepository = repository => ({
     type: ADD_REPOSITORY,
